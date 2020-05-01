@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,24 +22,44 @@ notebook/pc:
 }
 */
 
-
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
-
-.paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
-}
-
-.paticka a {
-    color: silver;
-}
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.recept1 {
+  background-image: url(images/burger.jpg);
+}
+.recept2 {
+  background-image: url(images/sushi.jpg);
+}
+.recept3 {
+  background-image: url(images/kure.jpg);
+}
+.recept4 {
+  background-image: url(images/rajcata.jpg);
+}
+.recept5 {
+  background-image: url(images/grilovani.jpg);
+}
+
+.hlavniRecept,
+.malyRecept {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  text-shadow: 0 5px 10px rgba(red, green, blue, alpha);
+}
+
+.hlavniRecept {
+}
