@@ -83,10 +83,6 @@ h2 {
   flex-direction: column;
 }
 
-/* .container {
-  display: flex;
-} */
-
 .hlavniRecept {
   min-height: 200px;
 }
@@ -113,18 +109,36 @@ h2 {
     min-height: 150px;
     padding: 20px;
     width: 50%;
+    flex-grow: 1;
+    flex-basis: auto;
   }
   .smallContainer {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: 860px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .hlavniRecept h2 {
+    font-size: 48px;
+  }
+  .malyRecept h2 {
+    font-size: 28px;
+  }
+  .hlavniRecept {
+    min-height: 400px;
+    padding: 20px;
+  }
   .malyRecept {
+    min-height: 200px;
+    padding: 20px;
+    width: 50%;
     flex-grow: 1;
     flex-basis: auto;
   }
-}
-
-@media (min-width: 860px);
- {
 }
